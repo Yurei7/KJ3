@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0px;
+}
+
+.walletbtn {
+    margin-left: 15px;
+}
+
+.title {
+    padding: 2% 10%;
+}
+
+.sol1 {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 277px
+}
+.ma {
+
+}
+.s3 {
+    position: relative;
+    left: 90px;
+}
