@@ -1,18 +1,33 @@
-document.querySelector(".walletbtn").addEventListener("click",getAccount)
+let numOfFlipBtns = document.querySelectorAll(".flipbtn").length;
+let HEADS = "Heads";
+let TAILS = "Tails";
 
-function getAccount()
-{
-window.solana.connect();
-window.solana.request({ method: "connect" })
-  
-window.solana.isConnected
-window.solana.autoApproved
-
-  document.getElementById("user-account").innerHTML = window.solana.publicKey;
+for (i = 0; i < numOfFlipBtns; i++) {
+  document.querySelectorAll(".flipbtn")[i].addEventListener("click", flip)
 }
 
-function disconnectAccount()
-{
-  window.solana.disconnect();
-  window.solana.on('disconnect', () => console.log("disconnected!"))
+function flip() {
+  let medHeading = document.querySelector(".medium-heading")
+  let winOrLosePrompt= document.querySelector(".winorlose")
+  let randomNum = Math.floor((Math.random() * 2));
+  let options = [HEADS, TAILS];
+  let result = options[randomNum];
+  let playerChoice = this.innerHTML
+  if (playerChoice === result) {
+    medHeading.textContent = result
+    winOrLosePrompt.textContent="WINNER WINNER CHICKEN DINNER";
+    winOrLosePrompt.style.visibility="visible";
+  }
+  else if (playerChoice != result) {
+    medHeading.textContent = result;
+    winOrLosePrompt.textContent= "LOSER LOSER DRUG ABUSER";
+    winOrLosePrompt.style.visibility= "visible";
+    
+  }
 }
+
+/*
+document.addEventListener("keydown",function (e){
+  console.log (e.key);
+})
+*/
