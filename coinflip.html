@@ -34,12 +34,12 @@
                         <a class="nav-link" href="coinflip.html" style="color:white;">Coinflip</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=" " style="color:white;">Secret</a>
+                        <a class="nav-link coming-soon" href=" " style="color:white;">Coming Soon</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=" " style="color:white;">Secret</a>
+                        <a class="nav-link coming-soon" href=" " style="color:white;">Coming Soon</a>
                     </li>
-                    <button class="btn btn-lg btn-light walletbtn">Connect Wallet</button>
+                    <button id="coming-soon" class="btn btn-lg btn-light walletbtn coming-soon">Connect Wallet</button>
 
                 </ul>
             </nav>
@@ -49,23 +49,32 @@
     <section class="coinflip-section">
         <div class="row">
             <div class="col-12">
-                <h1 class="medium-heading" >HEADS OR TAILS?</h1>
-                <h2 class="winorlose" >WINNER WINNER CHICKEN DINNER</h2>
-                <img class="initial-coin-img" src="Tails.PNG" alt="">
+                <h1 class="medium-heading">HEADS OR TAILS?</h1>
+
+                <div class="coinflip-div">
+                    <img class="initial-coin-img tails-img flipscreen" src="Tails.PNG" alt="">
+                    <img class="initial-coin-img heads-img flipscreen" src="heads.PNG" alt="">
+                    <img class="loading-coin loading"
+                        src="https://media.tenor.com/chwTWMBJ-gMAAAAi/bouncy-coin-coin-pixel.gif">
+                    <br>
+                    <img class="loading-bar loading"
+                        src="https://media0.giphy.com/media/LwBuVHh34nnCPWRSzB/giphy.gif?cid=ecf05e478yos0u4gxz3nqpglc9svouomez1gotussy10eic6&rid=giphy.gif&ct=s"
+                        alt="">
+                </div>
             </div>
             <br>
             <div>
-                <button id="headsbtn" class="btn btn-lg btn-light heads-btn flipbtn">Heads</button>
-                <button  id="tailsbtn" class="btn btn-lg btn-outline-light tails-btn flipbtn">Tails</button>
+                <button id="headsbtn" class="btn btn-lg btn-light heads-btn flipbtn flipscreen">Heads</button>
+                <button id="tailsbtn" class="btn btn-lg btn-light tails-btn flipbtn flipscreen">Tails</button>
 
             </div>
-         
+
 
 
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
