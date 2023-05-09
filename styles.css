@@ -50,14 +50,15 @@ h1 img {
 
 .navbar-brand {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     margin-right: 200px;
 }
 
 
 .walletbtn {
     margin-left: 15px;
-    font-size: 10px;
+    font-size: 11px;
+    width: 120px;
 }
 .coming-soon {
     cursor: not-allowed;
@@ -66,7 +67,8 @@ h1 img {
     cursor: not-allowed;
 }
 .nav-item {
-    font-size: 8px;
+    font-size: 11px;
+    width:150px;
 }
 
 /*----------------------------------------------CoinFlip Page-------*/
