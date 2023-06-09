@@ -29,13 +29,13 @@ function flip() {
     if (playerChoice === result) {
       /* medHeading.text(result);*/
       medHeading.text("WINNER WINNER CHICKEN DINNER");
-      medHeading.css("font-size", "50px")
+      medHeading.css("font-size", "40px")
       /*winOrLosePrompt.css("visibilityy", "visible");*/
     }
     else if (playerChoice != result) {
       /*medHeading.text(result);*/
       medHeading.text("LOSER LOSER DRUG ABUSER");
-      medHeading.css("font-size", "50px")
+      medHeading.css("font-size", "40px")
 
     }
 

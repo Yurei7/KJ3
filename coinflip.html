@@ -21,30 +21,19 @@
 </head>
 
 <body>
-    <section class="title">
-        <div class="container-fluid">
-
-            <nav class="navbar navbar-expand">
-                <a class="navbar-brand" href="index.html" style="color:white;">
-                    Kajino3
-                </a>
-
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="coinflip.html" style="color:white;">Coinflip</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link coming-soon" href=" " style="color:white;">Coming Soon</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link coming-soon" href=" " style="color:white;">Coming Soon</a>
-                    </li>
-                    <button id="coming-soon" class="btn btn-lg btn-light walletbtn coming-soon">Connect Wallet</button>
-
-                </ul>
-            </nav>
-        </div>
-    </section>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-brand"><a href="index.html">Kajino3</a></li>
+                <div class="nav-menu-items">
+                    <li class="nav-item"><a class="coinflip-menu-text" href="coinflip.html">Coinflip</a></li>
+                    <li class="nav-item">Coming Soon</li>
+                    <li class="nav-item">Coming Soon</li>
+                    <li class="nav-item"><a class="launch-btn">Connect Wallet</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
 
     <section class="coinflip-section">
         <div class="">
@@ -63,7 +52,7 @@
                 </div>
             </div>
             <br>
-            <div>
+            <div class="button-div">
                 <button id="headsbtn" class="btn btn-lg btn-light heads-btn flipbtn flipscreen">Heads</button>
                 <button id="tailsbtn" class="btn btn-lg btn-light tails-btn flipbtn flipscreen">Tails</button>
 
